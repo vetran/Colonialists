@@ -35,6 +35,42 @@ body{
    flex-grow: 1;
 }
 
+.buildings {
+    display: flex;
+    &__item {
+        width: 33.333333%;
+        background: rgba(255,255,255,.1);
+        color: #fff;
+    }
+    &__name {
+        text-align: center;
+        padding: 4px;
+    }
+    &__table{
+        display: table;
+        border-collapse: collapse;
+        // table-layout: fixed;
+        text-align: center;
+        width: 100%;
+        &-header {
+            display: table-header-group;
+        }
+        &-cell {
+            display: table-cell;
+            padding: 4px 0;
+        }
+        &-row {
+            display: table-row;
+        }
+        &-body {
+            display: table-row-group;
+        }
+   }
+
+}
+
+
+
 .footer{
    flex-shrink: 0;
 }
