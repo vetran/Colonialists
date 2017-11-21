@@ -1,0 +1,47 @@
+@import "reset";
+
+html{
+   font-size: 14px;
+}
+
+body{
+   background-color: #3a3a3a;
+   background-image: url(../img/background.jpg);
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   background-attachment: fixed;
+
+   display: -webkit-flex;
+   display: -ms-flex;
+   display: flex;
+   flex-direction: column;
+
+   font-family: sans-serif;
+}
+
+
+.header{
+   flex-shrink: 0;
+   padding: 10px;
+   text-align: center;
+}
+
+.logo{
+   width: 300px;
+}
+
+.main{
+   flex-grow: 1;
+}
+
+.footer{
+   flex-shrink: 0;
+}
+
+.copyright{
+   padding: 7px 10px;
+   background: rgba(255, 255, 255, 0.1);
+   text-align: center;
+   color: #fff;
+}
