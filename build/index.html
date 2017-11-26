@@ -137,7 +137,29 @@
                         <div class="buildings__table-cell">10д</div>
                      </div>
                   </div>
-                  <div class="buildings__table-footer"></div>
+                  <div class="buildings__table-footer">
+                     <div class="buildings__table-row">
+                        <div class="buildings__table-cell">Вид</div>
+                        <div class="buildings__table-cell">Уровень</div>
+                        <div class="buildings__table-cell">Цена</div>
+                        <div class="buildings__table-cell">Время</div>
+                     </div>
+                  </div>
+               </div>
+               <div class="buildings__estimate">
+                  <form class="estimate__form" action="/">
+                     <label class="estimate__label">
+                        <span class="estimate__text">Кол-во:</span>
+                        <input class="estimate__input estimate__input--count" type="number" min="1" max="1000" value="1">
+                     </label>
+                     <label class="estimate__label">
+                        <span class="estimate__text">Уровень:</span>
+                        <input class="estimate__input" type="number" min="1" max="14" value="1">
+                        <span class="estimate__arrow">&rarr;</span>
+                        <input class="estimate__input" type="number" min="1" max="14" value="14">
+                     </label>
+                     <button class="estimate__submit" type="submit">Подсчитать</button>
+                  </form>
                </div>
             </div>
          </div>
