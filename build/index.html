@@ -32,12 +32,12 @@
                         <div class="buildings__table-cell">1 000</div>
                         <div class="buildings__table-cell">10м</div>
                      </div>
-                     <div class="buildings__table-row" data-lvl="2" data-price="6300" data-time="1200">
+                     <div class="buildings__table-row" data-lvl="2" data-price="6500" data-time="1200">
                         <div class="buildings__table-cell">
                            <img class="preview" src="img/1/2.png" alt="">
                         </div>
                         <div class="buildings__table-cell">2</div>
-                        <div class="buildings__table-cell">6 300</div>
+                        <div class="buildings__table-cell">6 500</div>
                         <div class="buildings__table-cell">20м</div>
                      </div>
                      <div class="buildings__table-row" data-lvl="3" data-price="27500" data-time="10800">
@@ -147,26 +147,31 @@
                   </div>
                </div>
                <div class="buildings__estimate">
-                  <form class="estimate__form" action="/">
-                     <label class="estimate__label">
-                        <span class="estimate__text">Кол-во:</span>
-                        <input class="estimate__input estimate__input--count" type="number" min="1" max="1000" value="1">
-                     </label>
-                     <label class="estimate__label">
-                        <span class="estimate__text">Уровень:</span>
-                        <input class="estimate__input" type="number" min="1" max="14" value="1">
-                        <span class="estimate__arrow">&rarr;</span>
-                        <input class="estimate__input" type="number" min="1" max="14" value="14">
-                     </label>
-                     <button class="estimate__submit" type="submit">Подсчитать</button>
-                  </form>
+                  <div class="estimate">
+                     <form class="estimate__form" action="/">
+                        <label class="estimate__label">
+                           <span class="estimate__text">Количество:</span>
+                           <input class="estimate__input estimate__input--count" type="number" min="1" max="1000" value="1" name="quantity">
+                        </label>
+                        <label class="estimate__label">
+                           <span class="estimate__text">Уровень:</span>
+                           <input class="estimate__input" type="number" min="1" max="14" value="1" name="min_lvl">
+                           <span class="estimate__arrow">&rarr;</span>
+                           <input class="estimate__input" type="number" min="1" max="14" value="14" name="max_lvl">
+                        </label>
+                        <input type="hidden" name="category" value="1">
+                        <button class="estimate__submit" type="submit">Подсчитать</button>
+                     </form>
+
+                     <div class="estimate__result"></div>
+                  </div>
                </div>
             </div>
          </div>
       </div>
 
       <footer class="footer">
-         <div class="copyright"> Все права защищены.© 2017 </div>
+         <div class="copyright">Все права защищены.© 2017 </div>
       </footer>
       <script src="js/main.min.js"></script>
    </body>
