@@ -4,7 +4,7 @@
    var doc = document,
        buildings = doc.querySelector('.buildings'),
        items = buildings.querySelectorAll('.buildings__item');
-
+ 
    for (var i = 0, len = items.length; i < len; i++) {
       var item = items[i],
           form = item.querySelector('.estimate__form');
